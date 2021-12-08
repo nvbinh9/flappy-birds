@@ -1,7 +1,7 @@
 package flappybirds;
 
 
-import OpenSource.QueueList;
+import dependency.QueueList;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

@@ -1,4 +1,4 @@
-import OpenSource.GameScreen;
+import dependency.GameScreen;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;

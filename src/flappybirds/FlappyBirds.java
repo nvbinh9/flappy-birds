@@ -1,9 +1,9 @@
 package flappybirds;
 
 
-import OpenSource.AFrameOnImage;
-import OpenSource.Animation;
-import OpenSource.GameScreen;
+import dependency.AFrameOnImage;
+import dependency.Animation;
+import dependency.GameScreen;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -87,7 +87,7 @@ public class FlappyBirds extends GameScreen {
             
             for(int i = 0;i<ChimneyGroup.SIZE;i++){
                 if(bird.getRect().intersects(chimneyGroup.getChimney(i).getRect())){
-                    bird.setLive(false);
+                    bird.setLive(true);
                     System.out.println("Set live = false");
                 }
                     

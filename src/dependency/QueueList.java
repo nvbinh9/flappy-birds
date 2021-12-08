@@ -1,5 +1,5 @@
 
-package OpenSource;
+package dependency;
 
 public class QueueList <T> {
     

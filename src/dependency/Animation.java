@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package OpenSource;
+package dependency;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -45,3 +45,4 @@ public class Animation {
         frames[CurrentFrame].Paint(x, y, image, g2, anchor, rotation);
     }
 }
+

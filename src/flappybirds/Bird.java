@@ -1,7 +1,7 @@
 package flappybirds;
 
 
-import OpenSource.Objects;
+import dependency.Objects;
 
 import java.awt.*;
 

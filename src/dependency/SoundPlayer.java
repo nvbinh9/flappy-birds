@@ -1,4 +1,4 @@
-package OpenSource;
+package dependency;
 
 import java.io.File;
 import javax.sound.sampled.AudioFormat;
