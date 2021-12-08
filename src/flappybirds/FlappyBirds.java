@@ -34,10 +34,10 @@ public class FlappyBirds extends GameScreen {
     private int CurrentScreen = BEGIN_SCREEN;
     
     public FlappyBirds(){
-        super(800,600);
+        super(1200,600);
         
         try {
-            birds = ImageIO.read(new File("Assets/bird_sprite.png"));
+            birds = ImageIO.read(new File("Assets/gautruc5.jpg"));
         } catch (IOException ex) {}
         
         bird_anim = new Animation(70);
@@ -87,7 +87,7 @@ public class FlappyBirds extends GameScreen {
             
             for(int i = 0;i<ChimneyGroup.SIZE;i++){
                 if(bird.getRect().intersects(chimneyGroup.getChimney(i).getRect())){
-                    bird.setLive(true);
+                    bird.setLive(false);
                     System.out.println("Set live = false");
                 }
                     
