@@ -1,10 +1,3 @@
-package flappybirds;
-
-
-import dependency.AFrameOnImage;
-import dependency.Animation;
-import dependency.GameScreen;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -34,10 +27,10 @@ public class FlappyBirds extends GameScreen {
     private int CurrentScreen = BEGIN_SCREEN;
     
     public FlappyBirds(){
-        super(1200,600);
+        super(800,600);
         
         try {
-            birds = ImageIO.read(new File("Assets/gautruc5.jpg"));
+            birds = ImageIO.read(new File("Assets/bird_sprite.png"));
         } catch (IOException ex) {}
         
         bird_anim = new Animation(70);
@@ -85,7 +78,7 @@ public class FlappyBirds extends GameScreen {
             
             chimneyGroup.update();
             
-            for(int i = 0;i<ChimneyGroup.SIZE;i++){
+            for(int i = 0; i< ChimneyGroup.SIZE; i++){
                 if(bird.getRect().intersects(chimneyGroup.getChimney(i).getRect())){
                     bird.setLive(false);
                     System.out.println("Set live = false");
@@ -94,7 +87,7 @@ public class FlappyBirds extends GameScreen {
                 
             }
             
-            for(int i = 0;i<ChimneyGroup.SIZE;i++){
+            for(int i = 0; i< ChimneyGroup.SIZE; i++){
                 if(bird.getPosX() > chimneyGroup.getChimney(i).getPosX() && !chimneyGroup.getChimney(i).getIsBehindBird()
                         && i%2==0){
                     Point ++;
@@ -133,11 +126,11 @@ public class FlappyBirds extends GameScreen {
         
         if(CurrentScreen == BEGIN_SCREEN){
             g2.setColor(Color.red);
-            g2.drawString("Press space to play game", 200, 300);
+            g2.drawString("Nhấn space để bắt đầu game", 200, 300);
         }
         if(CurrentScreen == GAMEOVER_SCREEN){
             g2.setColor(Color.red);
-            g2.drawString("Press space to turn back begin screen", 200, 300);
+            g2.drawString("Nhấn space để quay lại màn hình bắt đầu", 200, 300);
         }
         
         g2.setColor(Color.red);

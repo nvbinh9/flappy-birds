@@ -1,8 +1,3 @@
-package flappybirds;
-
-
-import dependency.Objects;
-
 import java.awt.*;
 
 
@@ -37,7 +32,7 @@ public class Bird extends Objects {
     }
     public void update(long deltaTime){
         
-        vt+=FlappyBirds.g;
+        vt+= FlappyBirds.g;
         
         this.setPosY(this.getPosY()+vt);
         this.rect.setLocation((int) this.getPosX(),(int) this.getPosY());

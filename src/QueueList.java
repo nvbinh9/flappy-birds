@@ -1,6 +1,3 @@
-
-package dependency;
-
 public class QueueList <T> {
     
     private Element head, foot;

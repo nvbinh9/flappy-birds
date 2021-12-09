@@ -1,6 +1,3 @@
-package flappybirds;
-
-import dependency.Objects;
 
 import java.awt.*;
 

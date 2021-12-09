@@ -1,7 +1,3 @@
-
-package dependency;
-
-
 public class Objects {
     
     private float posX, posY;
